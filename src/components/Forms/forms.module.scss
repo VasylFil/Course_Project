@@ -1,0 +1,67 @@
+@import "../common/vars";
+
+.form *{
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+.form{
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+  .header{
+    font-size: 24px;
+  }
+  input{
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: .3rem;
+    outline: none;
+    font-family: Arial,serif;
+    font-size: 14px;
+    border: 1px solid $muted;
+    width: 100%;
+    &:focus{
+      border: 1px solid $main;
+    }
+  }
+  .label{
+    color: $light;
+  }
+  .redBtn{
+    width: 100%;
+    margin: 25px 0;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+    background-color: $red;
+  }
+  .greenBtn{
+    width: 100%;
+    margin: 25px 0;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+    background-color: $green;
+  }
+}
+

@@ -1,0 +1,26 @@
+@import "../common/vars";
+
+h1{
+  margin-top: 128px;
+  text-align: center;
+}
+.wrapper {
+  margin: 32px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  padding: 0;
+  .user {
+    padding: 8px 24px;
+    color: $muted;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $light;
+    &:hover {
+      background-color: $light;
+      cursor: pointer;
+    }
+    div {
+      padding: 5px 10px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "../common/vars";
+
+.section{
+  background: $light;
+  padding: 24px 0;
+  .rating{
+    margin: 0 auto;
+    max-width: 1308px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .top{
+      position: relative;
+      background-color: white;
+      width: 310px;
+      height: 100px;
+      margin: 0 12px 24px 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .sym{
+        font-size: 14px;
+      }
+      .hilo{
+        .hi{
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .lo{
+          font-size: 12px;
+          margin: auto 0 auto 8px;
+        }
+      }
+      .chart{
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        top: 20px;
+        right: 12px;
+        background-image: url('./chart.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: auto;
+      }
+      .vol{
+        font-size: 12px;
+        &>div{
+          margin-right: 4px;
+        }
+      }
+      &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+      }
+    }
+  }
+
+  .markets{
+    background-color: #fff;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    .headline{
+      display: flex;
+      border-bottom: 1px solid $light;
+      justify-content: space-between;
+      background-color: darken($light, 3);
+      padding: 16px 32px;
+      &>div{
+        cursor: pointer;
+        width: 170px;
+        font-size: 14px;
+      }
+    }
+    .content{
+      .wrapper{
+        padding: 16px 32px;
+        border-bottom: 1px solid $light;
+        font-size: 13px;
+        &:hover{
+          cursor: pointer;
+          background-color: #f5f5f5;
+        }
+        &>div{
+          width: 170px;
+        }
+        &>div:last-child{
+          color: red;
+        }
+      }
+    }
+    .more{
+      text-align: center;
+      padding: 16px 32px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+  .flexItem{
+    display: flex;
+  }
+}

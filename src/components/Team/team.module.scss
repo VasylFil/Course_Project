@@ -1,0 +1,92 @@
+@import "./src/components/common/vars";
+
+.team *{
+  box-sizing: border-box;
+}
+.team{
+  margin: 128px auto;
+  max-width: 1024px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  .newTeam{
+    border-bottom: 1px solid $light;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    padding: 8px;
+    outline: none;
+    font-family: Arial,serif;
+    font-size: 14px;
+    border-bottom: 1px solid $green;
+    width: 59%;
+    &:focus{
+      border-bottom: 1px solid $main;
+    }
+  }
+  button{
+    width: 40%;
+    border: 1px solid $green;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+    background-color: $green;
+  }
+  .title{
+    padding: 20px;
+    display: flex;
+    text-align: left;
+    color: $muted;
+    & >  * {
+      margin: 1px;
+      width: 20%;
+    }
+    & > :nth-child(1){
+      width: 15%;
+    }
+    & > :nth-child(2){
+      width: 40%;
+    }
+    & > :nth-child(5),:nth-child(6){
+      text-align: right;
+    }
+  }
+  .myTeams{
+    margin-bottom: 24px;
+    padding: 20px;
+    display: flex;
+    border-radius: .3rem;
+    border: 1px solid $muted;
+    cursor: pointer;
+    text-align: left;
+    & > * {
+      margin: 1px;
+      width: 20%;
+    }
+    & > :nth-child(1){
+      width: 15%;
+    }
+    & > :nth-child(2){
+      width: 40%;
+    }
+    & > :nth-child(4):hover{
+      color: $green;
+    }
+    & > :nth-child(5),:nth-child(6){
+      text-align: right;
+    }
+    & > :nth-child(5):hover{
+      color: $red;
+    }
+
+  }
+}

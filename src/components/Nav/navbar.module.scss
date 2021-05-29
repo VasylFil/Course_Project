@@ -1,0 +1,32 @@
+@import "../common/vars";
+
+.nav{
+  background-color: $nav;
+  padding: 24px 8px;
+  width: 100%;
+  .container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1140px;
+    div{
+      margin-left: auto;
+    }
+  }
+  .logo{
+    font-family: 'EdgeLine', serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: $main;
+  }
+  .navLink{
+    padding: 3px 12px;
+    text-transform: uppercase;
+    &:hover{
+      color: $main;
+    }
+  }
+  .active{
+    color: $main;
+  }
+}
